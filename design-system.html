@@ -58,7 +58,7 @@
 			<section id="typography" style="margin: 4rem 0">
 				<h2 class="numbered-title"><span>02 </span>Typography</h2>
 				<div class="flex">
-					<div style="flex-basis: 100%">
+					<div class="flow" style="flex-basis: 100%">
 						<div>
 							<p class="text-accent">Heading 1 - Bellefair Regular - 150px</p>
 							<p class="fs-900 uppercase ff-serif">Earth</p>
@@ -88,7 +88,7 @@
 						</div>
 					</div>
 
-					<div style="flex-basis: 100%">
+					<div class="flow" style="flex-basis: 100%">
 						<div>
 							<p class="text-accent">Subheading 1 - Bellefair Regular - 28px</p>
 							<p class="fs-500 ff-serif uppercase">384,400 km</p>
@@ -128,6 +128,109 @@
 								Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel,
 								dapibus id, mattis vel, nisi.
 							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="flow" id="interactive-elements">
+				<h2 class="numbered-title"><span>03</span> Interactive elements</h2>
+
+				<!-- navigation -->
+				<div>
+					<nav>
+						<ul class="primary-navigation underline-indicators flex">
+							<li class="active">
+								<a class="uppercase text-white letter-spacing-2" href="#"
+									><span>00</span> Active</a
+								>
+							</li>
+							<li>
+								<a class="uppercase text-white letter-spacing-2" href="#"
+									><span>01</span> Hovered</a
+								>
+							</li>
+							<li>
+								<a class="uppercase text-white letter-spacing-2" href="#"
+									><span>02</span> Idle</a
+								>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="flex" style="justify-content: space-evenly">
+					<div style="margin-top: 5rem">
+						<!-- explore button -->
+						<a
+							href="#"
+							class="large-button uppercase bg-white text-dark ff-serif fs-600"
+							style="text-decoration: none"
+							>Explore</a
+						>
+					</div>
+
+					<div class="flow" style="margin-bottom: 50vh; --flow-space: 4rem">
+						<!-- Tabs -->
+						<div class="tab-list flex underline-indicators">
+							<button
+								aria-selected="true"
+								class="uppercase text-accent bg-dark ff-sans-cond letter-spacing-2"
+							>
+								Moon
+							</button>
+							<button
+								aria-selected="false"
+								class="uppercase text-accent bg-dark ff-sans-cond letter-spacing-2"
+							>
+								Mars
+							</button>
+							<button
+								aria-selected="false"
+								class="uppercase text-accent bg-dark ff-sans-cond letter-spacing-2"
+							>
+								Europa
+							</button>
+						</div>
+						<!-- Dots -->
+						<div class="dot-indicators flex" style="justify-content: center">
+							<button aria-selected="true">
+								<span class="sr-only">Slide title</span>
+							</button>
+							<button aria-selected="false">
+								<span class="sr-only">Slide title</span>
+							</button>
+							<button aria-selected="false">
+								<span class="sr-only">Slide title</span>
+							</button>
+						</div>
+						<!-- Numbers -->
+						<div
+							class="number-indicators flex"
+							style="
+								flex-direction: column;
+								align-items: center;
+								aspect-ratio: 1;
+							"
+						>
+							<button
+								aria-selected="true"
+								class="text-white ff-serif fs-600 bg-dark"
+							>
+								1
+							</button>
+							<button
+								aria-selected="false"
+								class="text-white ff-serif fs-600 bg-dark"
+							>
+								2
+							</button>
+							<button
+								aria-selected="false"
+								class="text-white ff-serif fs-600 bg-dark"
+							>
+								3
+							</button>
 						</div>
 					</div>
 				</div>
