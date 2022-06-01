@@ -1,89 +1,205 @@
-# Frontend Mentor - Space tourism website
+# Frontend Mentor - Space tourism website solution
 
-![Design preview for the Space tourism website coding challenge](./preview.jpg)
+This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Welcome! 👋
+## Table of contents
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects. Our challenges are perfect portfolio pieces, so please feel free to use what you create in your portfolio to show others.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshots](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
+<p>&nbsp;</p>
 
-**To do this challenge, you need a strong understanding of HTML, CSS, and JavaScript.**
+## Overview
 
-## The challenge
+### The challenge
 
-Your challenge is to build out this multi-page space tourism website and get it looking as close to the design as possible.
-
-**This project is a collaboration between us, Scrimba, and Kevin Powell. If you'd like to see how Kevin would tackle the project, you can [follow along on Scrimba's free course](https://scrimba.com/learn/spacetravel).**
-
-If you're working through it yourself, please use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-If you choose to use a JS-heavy approach, we provide a local `data.json` file for the different page data. This means you'll be able to pull the data from there instead of using the separate `.html` files.
-
-Your users should be able to:
+Users should be able to:
 
 - View the optimal layout for each of the website's pages depending on their device's screen size
 - See hover states for all interactive elements on the page
 - View each page and be able to toggle between the tabs to see new information
+<p>&nbsp;</p>
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+### Screenshots
 
-## Where to find everything
+![Desktop Preview](./preview-desktop.png)<p>&nbsp;</p>
+![Tablet Preview](./preview-tablet.png)<p>&nbsp;</p>
+![Mobile Preview](./preview-mobile.png)
 
-Your task is to build out the project to the design file provided. We provide both Sketch and Figma versions of the design, so you can choose which tool you prefer to use. You can download the design file on the platform. The design download comes with a `README.md` file as well to help you get set up.
+### Links
 
-All the required assets for this project are in the `/assets` folder. The assets are already exported for the correct screen size and optimized. Some images are reusable at multiple screen sizes.
+- Solution URL: [https://github.com/Kinzume/space-tourism-website-main](https://github.com/Kinzume/space-tourism-website-main)
+- Live Site URL: [https://kinzume.github.io/space-tourism-website-main/](https://kinzume.github.io/space-tourism-website-main/)
 
-The design system in the design file will give you more information about the various colors, fonts, and styles used in this project.
+## My process
 
-## Building your project
+### Built with
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- JavaScript (ES6)
 
-1. Separate the `starter-code` from the rest of this project and rename it to something meaningful for you. Initialize the codebase as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+### What I learned
 
-## Deploying your project
+- CSS selectors
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+  ```css
+  .primary-navigation.underline-indicators {
+  	...;
+  }
+  ```
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+  - This selects an HTML element which has both classes `primary-navigation` and `underline-indicators`<p>&nbsp;</p>
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+  ```css
+  #primary-navigation.underline-indicators {
+  	...;
+  }
+  ```
 
-## Create a custom `README.md`
+  -This selects an HTML element which has the id `primary-navigation` and the class `underline-indicators`<p>&nbsp;</p>
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+- Feature queries
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+  ```css
+  @supports (backdrop-filter: blur(1rem)) {
+  	.primary-navigation {
+  		...;
+  	}
+  }
+  ```
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+  - If the browser supports the `backdrop-filter` property (and supports `blur` with the value `1rem`), then the styles are applied to the markup. In the example above styles for the class `primary-navigation` will be applied.
+  <p>&nbsp;</p>
 
-## Submitting your solution
+- Flexbox
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+  - `flex-grow` specifies how much space a flex item takes up in a flex container. If all flex items in the container have the same flex growth factor, then the items will be evenly distributed along the container
+  - `flex-basis` works in a similar way to `flex-grow`
+  - `order` specifies the position which the flex (or grid) item takes in the container
+  <p>&nbsp;</p>
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+- CSS Grid
 
-## Sharing your solution
+  - `place-items` is a shorthand property for `align-items` and `justify-items`. For example, setting `place-items` to `center` will set both `align-items` and `justify-items` to `center`
+  - `place-content` is a shorthand property for `align-content` and `justify-content`
+  - `display: inline-grid` enables a container to have a grid layout which is treated as an inline element. The container will not expand to fit it's own section
+  - `grid-column` is shorthand for `grid-column-start` and `grid-column-end`. This specifies where a grid item should start from
+  <p>&nbsp;</p>
 
-There are multiple places you can share your solution:
+- Local undefined custom properties
 
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+  - Used as placeholder custom properties which can be specified later on in the markup
+  - A fallback property is used until the placeholder is specified
+  - Example:
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback.
+    ```css
+    .flex {
+    	display: flex;
+    	gap: var(--gap, 1rem);
+    }
+    ```
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+    - Here, `--gap` would be the placeholder property
 
-## Got feedback for us?
+<p>&nbsp;</p>
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+- ARIA
 
-**Have fun building!** 🚀
+  - ARIA stands for Accessible Rich Internet Applications
+  - The following CSS class visually hides content whilst allowing screen readers access to the hidden content. Users can also tab onto the content
+    ```css
+    .sr-only {
+    	/*'screen-reader only'*/
+    	/*This hides the element*/
+    	position: absolute;
+    	width: 1px;
+    	height: 1px;
+    	padding: 0;
+    	margin: -1px;
+    	overflow: hidden;
+    	clip: rect(0, 0, 0, 0);
+    	white-space: nowrap;
+    	border: 0;
+    }
+    ```
+  - More info can be found here: https://gomakethings.com/hidden-content-for-better-a11y/#hiding-the-link
+  <p>&nbsp;</p>
+
+- WAI-ARIA roles
+
+  - WAI stands for Web Accessibility Initiative
+  - `role="role type"` are used to help screen readers identify non-semantic HTML elements
+  - For example the screen reader will read the element `<div role="tablist"></div>` as "Tab list"
+  - The role attribute can be used with JavaScript to build interactive elements on the page. In this project JavaScript is used to build tab components, which the user can select, to display various content on the page
+  - Check out https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles for a list of valid `"role type"` values
+  <p>&nbsp;</p>
+
+- `::before` and `::after`
+
+  - Used for decoration
+  - In this project I used `::after` to add numbers to the numbered tabs on the [technology page](https://kinzume.github.io/space-tourism-website-main/technology.html). This ensures screen readers won't read the numbers and will only read the meaning of each tab (launch vehicle, spaceport and space capsule)
+  <p>&nbsp;</p>
+
+- Semantic HTML
+
+  - Multiple `<header>` tags can be used in the `<body>` of an HTML markup (except within `<footer>`, `<address>` or another `<header>` tag)
+  - Example:
+
+        <header>
+          <h2>Heading!</h2>
+          <p>
+          Sub-heading!!
+          (Don’t use h3 as lower level h* elements are for
+          sub-categories and not sub-titles)`
+          </p>
+        </header>
+
+    <p>&nbsp;</p>
+
+- `<picture>` elements look something like this
+
+  ```html
+  <picture>
+  	<source srcset="./assets/destination/image-moon.webp" type="image/webp" />
+  	<img src="./assets/destination/image-moon.png" alt="the moon" />
+  </picture>
+  ```
+
+- The browser checks if `<source/>` can be displayed. If not then the `<img/>` element is displayed instead (this is the fallback element)
+<p>&nbsp;</p>
+
+### Continued development
+
+I'll be learning how to use SASS to better organise my CSS! I might use this project as an exercise to refactor the CSS into SASS.
+
+<p>&nbsp;</p>
+
+### Useful resources
+
+- [Kevin Powell's Scrimba Course](https://scrimba.com/learn/spacetravel) - This was an invaluable resource that helped me to complete this project.
+<p>&nbsp;</p>
+
+## Author
+
+- GitHub - [Kinzume](https://github.com/Kinzume)
+- Frontend Mentor - [@Kinzume](https://www.frontendmentor.io/profile/Kinzume)
+<p>&nbsp;</p>
+
+## Acknowledgments
+
+A huge thanks to Kevin Powell and Scrimba for creating the course.
+
+- YouTube - [Kevin Powell](https://www.youtube.com/kepowob)
+- Scrima - [Scrimba](https://scrimba.com/)
