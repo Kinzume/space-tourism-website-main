@@ -177,8 +177,8 @@ Users should be able to:
   </picture>
   ```
 
-- The browser checks if `<source/>` can be displayed. If not then the `<img/>` element is displayed instead (this is the fallback element)
-<p>&nbsp;</p>
+  - The browser checks if `<source/>` can be displayed. If not then the `<img/>` element is displayed instead (this is the fallback element)
+  <p>&nbsp;</p>
 
 ### Continued development
 
