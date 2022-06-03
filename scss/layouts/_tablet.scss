@@ -1,0 +1,22 @@
+@use '../abstracts/mixins';
+
+@include mixins.tablet {
+	.numbered-title {
+		justify-self: start;
+		margin-top: 2rem;
+	}
+
+	.destination-meta {
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+
+	.grid-container--crew {
+		padding-bottom: 0;
+		grid-template-areas:
+			'title'
+			'content'
+			'tabs'
+			'image';
+	}
+}

@@ -1,0 +1,33 @@
+.grid-container--technology {
+	padding-bottom: 7rem;
+	grid-template-areas:
+		'title'
+		'image'
+		'tabs'
+		'content';
+}
+
+.grid-container--technology > picture {
+	grid-area: image;
+	max-width: calc(2rem + 100%);
+	overflow-x: hidden;
+}
+
+.grid-container--technology > .number-indicators {
+	/* aspect-ratio: 1;
+	max-height: 4rem; */
+	grid-area: tabs;
+	place-content: center;
+}
+
+.technology-details {
+	grid-area: content;
+}
+
+.technology-details > p {
+	max-width: 50ch;
+}
+
+.technology-details > header > h2 {
+	font-size: var(--fs-400);
+}

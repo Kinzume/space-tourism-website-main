@@ -1,0 +1,82 @@
+@use '../abstracts/mixins';
+
+body {
+	background-size: cover;
+	background-position: bottom center;
+}
+
+/* home */
+
+.home {
+	background-image: url(../../assets/home/background-home-mobile.jpg);
+}
+
+@include mixins.tablet {
+	.home {
+		background-position: center center;
+		background-image: url(../../assets/home/background-home-tablet.jpg);
+	}
+}
+
+@include mixins.desktop {
+	.home {
+		background-image: url(../../assets/home/background-home-desktop.jpg);
+	}
+}
+
+/* destination */
+
+.destination {
+	background-image: url(../../assets/destination/background-destination-mobile.jpg);
+}
+
+@include mixins.tablet {
+	.destination {
+		background-position: center center;
+		background-image: url(../../assets/destination/background-destination-tablet.jpg);
+	}
+}
+
+@include mixins.desktop {
+	.destination {
+		background-image: url(../../assets/destination/background-destination-desktop.jpg);
+	}
+}
+
+/* crew */
+
+.crew {
+	background-image: url(../../assets/crew/background-crew-mobile.jpg);
+}
+
+@include mixins.tablet {
+	.crew {
+		background-position: center center;
+		background-image: url(../../assets/crew/background-crew-tablet.jpg);
+	}
+}
+
+@include mixins.desktop {
+	.crew {
+		background-image: url(../../assets/crew/background-crew-desktop.jpg);
+	}
+}
+
+/* technology */
+
+.technology {
+	background-image: url(../../assets/technology/background-technology-mobile.jpg);
+}
+
+@include mixins.tablet {
+	.technology {
+		background-position: center center;
+		background-image: url(../../assets/technology/background-technology-tablet.jpg);
+	}
+}
+
+@include mixins.desktop {
+	.technology {
+		background-image: url(../../assets/technology/background-technology-desktop.jpg);
+	}
+}
