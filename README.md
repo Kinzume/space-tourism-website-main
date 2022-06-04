@@ -203,3 +203,15 @@ A huge thanks to Kevin Powell and Scrimba for creating the course.
 
 - YouTube - [Kevin Powell](https://www.youtube.com/kepowob)
 - Scrima - [Scrimba](https://scrimba.com/)
+  <p>&nbsp;</p>
+
+### Update 04/06/2022:
+
+Thanks to Danilo Blas [@Sdann26](https://www.frontendmentor.io/profile/Sdann26) for suggesting to learn SASS.
+
+Check out the resources I used:
+
+- YouTube - [The Net Ninja](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jxJX7vojNVK-o8ubDZEcNb)
+- YouTube - [Jessica Chan (Coder Coder)](https://www.youtube.com/watch?v=jfMHA8SqUL4)
+
+Please note that `@import` is being depracated and will be replaced with `@use` and `@forward`. If you would like to learn more check out this video from Jessica [Sass @import is being replaced with @use and @forward](https://www.youtube.com/watch?v=dOnYNEXv9BM)
